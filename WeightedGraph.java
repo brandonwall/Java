@@ -1,46 +1,8 @@
-package graph;
-
 import java.util.*;
 
-/**
- * <P>This class represents a general "directed graph", which could 
- * be used for any purpose.  The graph is viewed as a collection 
- * of vertices, which are sometimes connected by weighted, directed
- * edges.</P> 
- * 
- * <P>This graph will never store duplicate vertices.</P>
- * 
- * <P>The weights will always be non-negative integers.</P>
- * 
- * <P>The WeightedGraph will be capable of performing three algorithms:
- * Depth-First-Search, Breadth-First-Search, and Djikatra's.</P>
- * 
- * <P>The Weighted Graph will maintain a collection of 
- * "GraphAlgorithmObservers", which will be notified during the
- * performance of the graph algorithms to update the observers
- * on how the algorithms are progressing.</P>
- */
 public class WeightedGraph<V> {
 
-	/* STUDENTS:  You decide what data structure(s) to use to
-	 * implement this class.
-	 * 
-	 * You may use any data structures you like, and any Java 
-	 * collections that we learned about this semester.  Remember 
-	 * that you are implementing a weighted, directed graph.
-	 */
-
-
-
-
-
-
-	/* Collection of observers.  Be sure to initialize this list
-	 * in the constructor.  The method "addObserver" will be
-	 * called to populate this collection.  Your graph algorithms 
-	 * (DFS, BFS, and Dijkstra) will notify these observers to let 
-	 * them know how the algorithms are progressing. 
-	 */
+	
 	private Collection<GraphAlgorithmObserver<V>> observerList;
 	public HashMap<V,HashMap<V,Integer>> map;
 	private int size;
